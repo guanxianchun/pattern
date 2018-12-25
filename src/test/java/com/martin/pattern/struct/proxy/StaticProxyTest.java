@@ -1,10 +1,6 @@
 package com.martin.pattern.struct.proxy;
 
-import java.awt.Image;
 import java.io.FileOutputStream;
-import java.lang.reflect.Proxy;
-
-import com.sun.xml.internal.messaging.saaj.util.ByteOutputStream;
 
 import sun.misc.ProxyGenerator;
 
