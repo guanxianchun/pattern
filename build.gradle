@@ -9,8 +9,10 @@
 plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
+    id 'eclipse'
 }
 
+//eclipse 如果没有出现依赖包，执行gradle eclipse
 dependencies {
     // This dependency is exported to consumers, that is to say found on their compile classpath.
     api 'org.apache.commons:commons-math3:3.6.1'
@@ -21,12 +23,17 @@ dependencies {
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
     
+    testImplementation 'cglib:cglib:2.2.2'
     //user cglib
-    implementation 'cglib:cglib:2.2.2'
+    api 'cglib:cglib:2.2.2'
 }
 
 // In this section you declare where to find the dependencies of your project
 repositories {
+	
+	maven { url "http://maven.aliyun.com/nexus/content/groups/public" }
+	
+	mavenCentral()
     // Use jcenter for resolving your dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
