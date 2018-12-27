@@ -9,6 +9,15 @@ public class Handler {
 	private Method method;
 	//请求URL
 	private String url;
+	
+	Object[] params;
+	
+	public Handler(String url,Object controller,Method method,Object[] params) {
+		this.url = url;
+		this.method = method;
+		this.controller = controller;
+		this.params = params;
+	}
 	/**
 	 * @return the controller
 	 */
@@ -44,6 +53,18 @@ public class Handler {
 	 */
 	public void setUrl(String url) {
 		this.url = url;
+	}
+	/**
+	 * @return the params
+	 */
+	public Object[] getParams() {
+		return params;
+	}
+	/**
+	 * @param params the params to set
+	 */
+	public void setParams(Object[] params) {
+		this.params = params;
 	}
 	
 	
