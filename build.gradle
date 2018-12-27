@@ -26,6 +26,8 @@ dependencies {
     testImplementation 'cglib:cglib:2.2.2'
     //user cglib
     api 'cglib:cglib:2.2.2'
+    
+    compileOnly "javax.servlet:servlet-api:2.5"
 }
 
 // In this section you declare where to find the dependencies of your project
