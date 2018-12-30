@@ -1,6 +1,6 @@
 package com.martin.pattern.struct.dispatcher.controller;
 
-import com.martin.pattern.struct.template.entity.Member;
+import com.martin.pattern.entity.Member;
 
 public class UserController {
 	

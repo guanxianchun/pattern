@@ -3,8 +3,8 @@ package com.martin.pattern.struct.template.dao;
 import java.sql.ResultSet;
 import java.util.List;
 
+import com.martin.pattern.entity.Member;
 import com.martin.pattern.struct.template.JdbcTemlate;
-import com.martin.pattern.struct.template.entity.Member;
 import com.martin.pattern.struct.template.mapper.RowMapper;
 /**
  * DAO层

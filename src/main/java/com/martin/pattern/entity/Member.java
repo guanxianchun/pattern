@@ -1,4 +1,4 @@
-package com.martin.pattern.struct.template.entity;
+package com.martin.pattern.entity;
 /**
  * 实体类
  * @author 管贤春
@@ -16,6 +16,8 @@ public class Member {
 	
 	private String address;
 	
+	private String password;
+	
 	public String getMemberId() {
 		return memberId;
 	}
@@ -32,33 +34,28 @@ public class Member {
 		this.name = name;
 	}
 
-	/**
-	 * @return the age
-	 */
 	public int getAge() {
 		return age;
 	}
 
-	/**
-	 * @param age the age to set
-	 */
 	public void setAge(int age) {
 		this.age = age;
 	}
 
-	/**
-	 * @return the address
-	 */
 	public String getAddress() {
 		return address;
 	}
 
-	/**
-	 * @param address the address to set
-	 */
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
 	
 }
