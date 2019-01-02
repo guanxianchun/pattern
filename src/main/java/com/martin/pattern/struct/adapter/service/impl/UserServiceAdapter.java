@@ -1,7 +1,7 @@
 package com.martin.pattern.struct.adapter.service.impl;
 
 import com.martin.pattern.entity.Constant;
-import com.martin.pattern.struct.adapter.bean.ResultMessage;
+import com.martin.pattern.entity.ResultMessage;
 
 /**
  * 适配置器模式：原系统的接口已经很稳定了，不想动原来的代码的情况下，为了增加新的需求功能而做的接口兼容

@@ -1,6 +1,6 @@
 package com.martin.pattern.struct.adapter.service;
 
-import com.martin.pattern.struct.adapter.bean.ResultMessage;
+import com.martin.pattern.entity.ResultMessage;
 /**
  * 登录接口
  * 

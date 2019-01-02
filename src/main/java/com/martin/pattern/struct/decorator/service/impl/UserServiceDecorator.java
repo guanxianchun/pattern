@@ -1,7 +1,7 @@
 package com.martin.pattern.struct.decorator.service.impl;
 
 import com.martin.pattern.entity.Constant;
-import com.martin.pattern.struct.adapter.bean.ResultMessage;
+import com.martin.pattern.entity.ResultMessage;
 import com.martin.pattern.struct.adapter.service.IUserService;
 import com.martin.pattern.struct.decorator.service.IUserServiceDecorator;
 /**

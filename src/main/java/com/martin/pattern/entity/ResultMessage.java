@@ -1,4 +1,4 @@
-package com.martin.pattern.struct.adapter.bean;
+package com.martin.pattern.entity;
 
 public class ResultMessage {
 	

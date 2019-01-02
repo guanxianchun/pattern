@@ -2,7 +2,7 @@ package com.martin.pattern.struct.adapter.service.impl;
 
 import java.util.UUID;
 
-import com.martin.pattern.struct.adapter.bean.ResultMessage;
+import com.martin.pattern.entity.ResultMessage;
 import com.martin.pattern.struct.adapter.service.IUserService;
 /**
  * 
