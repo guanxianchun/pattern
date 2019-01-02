@@ -1,6 +1,6 @@
 package com.martin.pattern.struct.adapter;
 
-import com.martin.pattern.struct.adapter.service.impl.UserServiceAdapter;
+import com.martin.pattern.struct.adapter.impl.UserServiceAdapter;
 
 public class UserServiceAdapterTest {
 	
