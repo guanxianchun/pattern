@@ -1,4 +1,4 @@
-package com.martin.pattern.struct.adapter.service.impl;
+package com.martin.pattern.struct.adapter.impl;
 
 import com.martin.pattern.entity.Constant;
 import com.martin.pattern.entity.ResultMessage;

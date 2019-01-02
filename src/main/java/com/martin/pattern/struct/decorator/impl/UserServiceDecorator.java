@@ -1,15 +1,15 @@
-package com.martin.pattern.struct.decorator.service.impl;
+package com.martin.pattern.struct.decorator.impl;
 
 import com.martin.pattern.entity.Constant;
 import com.martin.pattern.entity.ResultMessage;
-import com.martin.pattern.struct.adapter.service.IUserService;
-import com.martin.pattern.struct.decorator.service.IUserServiceDecorator;
+import com.martin.pattern.struct.adapter.IUserService;
+import com.martin.pattern.struct.decorator.IUserServiceDecorator;
 /**
  * 包装器模式：(如：IO流、数据源DataSource等)
  * 		1. 为了某个实现类在不修改原始类的基础上进行动态地覆盖或增加新的方法
  * 		2. 该实现类保持了与原有类的层级关系
  *  		
- *      		装饰器模式                                                                           适配器模式
+ *      		装饰器模式 /包装器模式                                                 适配器模式
  * -----------------------------------------------------------------------------------------------------
  * 	 是一种非常特别的适配器模式                                                          可以不保留层级关系
  * -----------------------------------------------------------------------------------------------------

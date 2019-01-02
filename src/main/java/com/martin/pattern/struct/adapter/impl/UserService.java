@@ -1,9 +1,9 @@
-package com.martin.pattern.struct.adapter.service.impl;
+package com.martin.pattern.struct.adapter.impl;
 
 import java.util.UUID;
 
 import com.martin.pattern.entity.ResultMessage;
-import com.martin.pattern.struct.adapter.service.IUserService;
+import com.martin.pattern.struct.adapter.IUserService;
 /**
  * 
  * 本地
