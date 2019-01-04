@@ -32,7 +32,7 @@ public class StaticProxyTest {
 		System.out.println("\ntest cglib proxy..................");
 		Student student = new Student();
 		CglibProxy proxy = new CglibProxy();
-		Student proxyObj = (Student) proxy.getInstance(student);
+		Student proxyObj = (Student) proxy.getInstance(Student.class);
 		System.out.println(proxyObj);
 		proxyObj.goToSchool();
 	}
