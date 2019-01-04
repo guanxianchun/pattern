@@ -26,17 +26,17 @@ public class ServletDispatcher {
 		this.init();
 	}
 	
-	private void register(String url,Class<?> clazz,String methodName) {
+	private void register(String url,Class<?> clazz,String methodName,String httpMethod) {
 		try {
-			this.handlerMapping.put(url, new Handler(url,clazz.newInstance(), clazz.getMethod(methodName, null), null));
+			this.handlerMapping.put(url, new Handler(url,clazz.newInstance(), clazz.getMethod(methodName, null), null,httpMethod));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 	private void init() {
-		this.register("/user/getUserInfo", UserController.class, "getUserInfo");
-		this.register("/system/getSystemInfo", SystemController.class, "getSystemInfo");
+		this.register("/user/getUserInfo", UserController.class, "getUserInfo","GET");
+		this.register("/system/getSystemInfo", SystemController.class, "getSystemInfo","GET");
 	}
 
 	/**
