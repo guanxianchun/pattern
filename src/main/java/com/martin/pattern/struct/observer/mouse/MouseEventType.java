@@ -1,10 +1,21 @@
 package com.martin.pattern.struct.observer.mouse;
 
 public enum MouseEventType {
-	ON_CLICK,
-	ON_DOUBLE_CLICK,
-	ON_UP,
-	ON_DOWN,
-	ON_OVER,
-	ON_MOVE;
+	ON_CLICKED("click"),
+	ON_DOUBLE_CLICKED("doubleClick"),
+	ON_RELEASED("release"),
+	ON_PRESSED("press"),
+	ON_ENTERED("enter"),
+	ON_MOVED("move");
+	
+	private String method;
+	
+	private MouseEventType(String method) {
+		this.method = method;
+	}
+	
+	@Override
+	public String toString() {
+		return this.method;
+	}
 }

@@ -1,7 +1,14 @@
 package com.martin.pattern.struct.observer.core;
 
 import java.lang.reflect.Method;
-
+/**
+ * 事件类
+ * 
+ * @author 管贤春
+ * @时间 2019年1月4日 下午2:50:53
+ * @Email psyche19830113@163.com
+ * @Description
+ */
 public class Event {
 	//通知目标
 	private Object target;

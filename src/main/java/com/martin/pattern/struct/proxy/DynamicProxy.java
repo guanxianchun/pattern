@@ -5,6 +5,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
+ * JDK动态代理类
  * 原理：
  * 	1. 拿到被代理对象的引用，并且获取到它的所有接口（反射获取）
  * 	2. JDK Proxy类重新生成一个新的对象，同时新的类要实现被代理类所有实现
@@ -29,8 +30,8 @@ public class DynamicProxy implements InvocationHandler {
 	public Object getInstance() {
 		Class<?> clazz = this.target.getClass();
 		return Proxy.newProxyInstance(clazz.getClassLoader(), clazz.getInterfaces(), this);
-		
 	}
+	
 	@Override
 	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 		System.out.println("代理你找工作.........");
